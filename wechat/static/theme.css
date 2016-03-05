@@ -1,0 +1,28 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-image: url("../static/bg2.jpg");
+
+}
+
+.theme-dropdown .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+    margin: 5px 0;
+
+}
+
+.theme-showcase .navbar .container {
+    width: auto;
+}
+
+.jumbotron{
+    background: rgba(0,0,0,0.3);
+    color: white;
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>填写签到信息</title>
+    <link href="../static/jquery.min.js">
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/register.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <form class="form-signin", method="post" action="/successReg">
+        <h2 class="form-signin-heading">请填写签到信息</h2>
+        <label for="inputName" class="sr-only" >姓名</label>
+        <input type="text" id="inputName" name="name" class="form-control" placeholder="姓名" required autofocus>
+        <label for="inputTel" class="sr-only">手机号码</label>
+        <input type="tel" name="tel" id="inputTel" class="form-control" placeholder="手机号码" required>
+
+        <div class="checkbox">
+            <label>
+
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">签到</button>
+
+    </form>
+    <a href="/thank">
+        <p align="center">取消</p>
+    </a>
+
+
+</div>
+<!-- /container -->
+
+</body>
+</html>

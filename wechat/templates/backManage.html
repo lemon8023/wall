@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>后台管理</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/justified-nav.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted" >微信墙后台管理</h3>
+        <nav>
+          <ul class="nav nav-justified " >
+            <li ><a href="/start">返回前端</a></li>
+            <li class="active"><a href="#">领奖验证</a></li>
+            <li class="active"><a href="#">奖项设置</a></li>
+            <li class="active"><a href="#">规则设置</a></li>
+            <li class="active"><a href="#">开幕词/闭幕词设置</a></li>
+            <li class="active"><a href="#">管理员特权</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>你还没有管理员权限！</h1>
+        <p class="lead">
+            如果你想要修改开幕/闭幕词或者活动规则、设置奖项或者开启管理员特权，请点击下面按钮到登录页面，输入管理账户密码进行权限验证。
+            如果你没有管理员权限请点击“返回前端”以返回前端。
+        </p>
+        <p><a class="btn btn-lg btn-success" href="/login" role="button">管理员权限验证</a></p>
+      </div>
+
+
+{#      <!-- Site footer -->#}
+{#      <footer class="footer">#}
+{#        <p>&copy; Company 2014</p>#}
+{#      </footer>#}
+
+    </div> <!-- /container -->
+  </body>
+</html>

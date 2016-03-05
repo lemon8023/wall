@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>权限验证</title>
+    <link href="../static/jquery.min.js">
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/signin.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <form class="form-signin", method="post" action="/manageMenu">
+        <h2 class="form-signin-heading">请登录</h2>
+        <label for="inputName" class="sr-only" >管理员账号</label>
+        <input type="text" id="inputName" name="name" class="form-control" placeholder="管理员账号" required autofocus>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" name="pwd" id="inputPassword" class="form-control" placeholder="密码" required>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> 记住我
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+
+    </form>
+    <a href="/start">
+        <p align="center">取消</p>
+    </a>
+
+
+</div>
+<!-- /container -->
+
+</body>
+</html>
